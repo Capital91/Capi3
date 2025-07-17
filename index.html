@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Info Form</title>
+  <style>
+    body {
+      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .form-container {
+      max-width: 500px;
+      margin: 50px auto;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto 20px auto;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="file"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    .btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px;
+      text-align: center;
+      display: block;
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+    }
+
+    .dual-label {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    
+    <img src="https://your-site.com/logo.png" alt="Logo" class="logo">
+
+    <h2>Personal Information / පෞද්ගලික තොරතුරු</h2>
+
+    <form>
+
+      <label class="dual-label">Full Name / සම්පූර්ණ නම</label>
+      <input type="text" name="fullName">
+
+      <label class="dual-label">Date of Birth / උපන්දිනය</label>
+      <input type="date" name="dob">
+
+      <label class="dual-label">Address / ලිපිනය</label>
+      <input type="text" name="address">
+
+      <label class="dual-label">Phone Number / දුරකථන අංකය</label>
+      <input type="tel" name="phone">
+
+      <label class="dual-label">Upload ID (Front Side) / හැඳුනුම්පත ඉදිරිපස උඩුගත කරන්න</label>
+      <input type="file" name="idFront" accept="image/*">
+
+      <label class="dual-label">Upload ID (Back Side) / හැඳුනුම්පත පසුපස උඩුගත කරන්න</label>
+      <input type="file" name="idBack" accept="image/*">
+
+      <label class="dual-label">Upload Selfie / ඔබගේ මුහුණු පින්තූරයක් උඩුගත කරන්න</label>
+      <input type="file" name="selfie" accept="image/*">
+
+    </form>
+
+    <!-- ✅ This always goes to next page -->
+    <a href="YOUR_NEXT_LINK_HERE" class="btn">Next / ඉදිරියට යන්න</a>
+  </div>
+
+</body>
+</html>
