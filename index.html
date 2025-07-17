@@ -11,18 +11,22 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; /* top-aligned for mobile */
+      min-height: 100vh;
     }
 
     .form-container {
       width: 90%;
       max-width: 500px;
-      margin: 50px auto;
       background-color: rgba(255, 255, 255, 0.9);
       padding: 30px;
       border-radius: 15px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
       text-align: center;
-      backdrop-filter: blur(0px);
+      box-sizing: border-box;
+      margin-top: 30px;
     }
 
     .logo {
@@ -72,8 +76,8 @@
       cursor: pointer;
       font-size: 16px;
       text-decoration: none;
-      margin-top: 20px;      /* ✅ Add spacing above the button */
-      margin-bottom: 10px;   /* ✅ Add spacing below the button */
+      margin-top: 20px;
+      margin-bottom: 10px;
       box-sizing: border-box;
     }
 
@@ -86,17 +90,11 @@
       margin-bottom: 5px;
     }
 
-    /* 🔧 Mobile optimization */
     @media (max-width: 600px) {
-      body {
-        background-size: cover;
-        background-attachment: fixed;
-      }
-
       .form-container {
         width: 95%;
-        margin: 20px auto;
         padding: 20px;
+        margin-top: 20px;
       }
 
       .logo {
@@ -123,8 +121,6 @@
       .btn {
         font-size: 16px;
         padding: 14px;
-        margin-top: 20px;
-        margin-bottom: 10px;
       }
     }
   </style>
